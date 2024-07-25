@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* overflow-x: hidden; */
+}
+html,body{
+    width: 100%;
+    height: 100%;overflow-x: hidden;
+}
+nav{
+ width: 100%;
+ min-height: 80px;
+ background-color: black;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px 60px;
+position: relative;
+padding-bottom: 0;
+position: sticky;
+top: 0;
+left: 0;
+z-index: 100;
+}
+.nav-1{
+    width: 110px;height: 110px;
+
+}
+.nav-1 img{
+    width: 100%;height: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+.nav-2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.nav-2 ul li a{
+    color: white;
+ text-decoration: none;
+ font-size:20px ;
+ font-weight: 900;
+
+}
+.nav-2 ul li a.active{
+    color: yellow;
+}
+.nav-2 ul li a:hover{
+    color: yellow;
+}
+nav>img{
+    width: 100%;height: 30px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+}
+.menu,.close{
+    display: none;
+    opacity: 0;
+}
+#home-sec-1{
+    width: 100vw;height: 60vh;
+    overflow: hidden;
+position: relative;
+}
+/* .home-logo{
+    width: 100%;
+    height: 100%;
+    
+} */
+#home-sec-1 .home-logo{
+    width: 550px;height: 350px;
+    object-fit: contain;
+    filter: grayscale(.4);
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* object-position: center; */
+    /* position: absolute; */
+}
+#home-sec-1>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    object-fit: cover;
+}
+.home-logo-bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 25;
+}
+.home-logo-bg .green{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.418);
+    padding-right: 80px;
+}
+.home-logo-bg .yellow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.290);
+    padding-left: 80px;
+}
+.green h1,.yellow h1{
+    cursor: pointer;
+}
+.green h1 a,.yellow h1 a{
+    text-decoration: none;
+    font-size: 8vw;
+    font-weight: 900;
+    font-family: "lato";
+cursor: pointer;
+text-shadow: #000 2px 2px 2px;
+}
+.green h1 a{
+    color: yellow;
+}
+.yellow h1 a{
+    color: green;
+}
+
+#home-sec-2{
+    width: 100vw;
+    height: 60vh;
+    background-color: #FEE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 40px;
+    position: relative;
+}
+#home-sec-2 .home-sec-2-card{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 350px;
+    gap: 20px;
+}
+.home-sec-2-card .sec-2-card-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.sec-2-card-1 i{
+    font-size: 40px;
+}
+.sec-2-card-1 h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+.sec-2-card-1 h2:last-child{
+margin-left: 20px;
+}
+.home-sec-2-card p{
+font-size: 15px;
+}
+.home-sec-2-card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: black;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 15;
+    transition: .5s all ease-in-out;
+    overflow: hidden;
+}
+.home-sec-2-card a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+background-color: rgb(0, 0, 0);
+z-index: -1;
+border-radius: 20px;
+transition: .5s all ease-in-out;
+}
+.home-sec-2-card a:hover::before{
+    right: 0;
+}
+.home-sec-2-card a:hover{
+    color: rgb(237, 237, 82);
+    background-color: transparent;
+}
+.yell-angle{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 30px;left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .menu,.close{
+        display: block;
+        opacity: 1;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-2{
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .6s ease, visibility .6s ease;
+        transform: translateY(-10px);
+        display: flex;
+        background-color: black;
+    }
+    .nav-2 ul{
+        flex-direction: column;
+    }
+    .nav-2.open{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:500px) {
+    .green,.yellow{
+        padding: 10px 50px;
+    }
+    .green h1 a ,.yellow h1 a{
+        font-size: 10vw;
+    }
+}

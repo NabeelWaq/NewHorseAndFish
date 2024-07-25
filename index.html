@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorseAndFish | Home</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-1">
+            <img src="./images/logo.png" alt="">
+
+        </div>
+        <i class="fa-solid fa-bars menu"></i>
+        <div class="nav-2">
+            <i class="fa-regular fa-circle-xmark close"></i>
+            <ul>
+                <li><a class="nav-link" href="./index.html">HOME</a></li>
+                <li><a class="nav-link" href="#">SERVICES</a></li>
+                <li><a class="nav-link" href="#">ABOUT US</a></li>
+                <li><a class="nav-link" href="#">NEWS</a></li>
+                <li><a class="nav-link" href="#">CONTANT US</a></li>
+                <li><a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                
+            </ul>
+        </div>
+        <img src="./images/black_angle_bot.png" alt="">
+    </nav>
+<main>
+    <Section id="home-sec-1">
+        <img src="/images/home.jpeg" alt="">
+        <!-- <div class="home-logo"> -->
+            <img class="home-logo" src="./images/logo.png" alt="">
+        <!-- </div> -->
+       <div class="home-logo-bg">
+        <div class="green">
+            <h1><a href="#">Couriers</a></h1>
+        </div>
+        <div class="yellow">
+            <h1><a href="#">Removals</a></h1>
+        </div>
+       </div>
+    </Section>
+    <section id="home-sec-2">
+        <div class="home-sec-2-card">
+            <div class="sec-2-card-1">
+                <i class="fa-solid fa-box-open"></i>
+                <h2>Delivery Solutions</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="home-sec-2-card">
+            <div class="sec-2-card-1">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h2>EXPRESS SERVICES</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="home-sec-2-card">
+            <div class="sec-2-card-1">
+                <i class="fa-solid fa-plane"></i>
+                <h2>FREIGHT TRANSPORTATION</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#">Read More</a>
+        </div>
+        <img class="yell-angle" src="./images/yell_angle.png" alt="">
+    </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Script to make nav link color yellow on active
+        document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+    }
+});
+
+document.querySelector('.menu').addEventListener('click',()=>{
+    document.querySelector('.nav-2').classList.add('open');
+})
+document.querySelector('.close').addEventListener('click',()=>{
+    document.querySelector('.nav-2').classList.remove('open');
+})
+    </script>
+
+</body>
+
+</html>
