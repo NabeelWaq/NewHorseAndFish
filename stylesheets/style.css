@@ -857,7 +857,10 @@ transition: .5s all ease-in-out;
     .green,.yellow{
         padding: 10px 50px;
     }
-    .green h1 a ,.yellow h1 a{
+    .green .green-heading h1,.yellow .yellow-heading h1{
+        height: 8.5vw;
+    }
+    .green .green-heading h1 a ,.yellow .yellow-heading h1 a{
         font-size: 10vw;
     }
     #home-sec-3{

@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@font-face {
+    font-family: gotick;
+    src: url('../fonts/Copperplate\ Gothic\ Bold\ Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* overflow-x: hidden; */
+}
+h1,h2{
+    font-family: "Roboto Slab", serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;overflow-x: hidden;
+    background-color: #FEE600;
+}
+nav{
+ width: 100%;
+ min-height: 80px;
+ background-color: black;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px 60px;
+position: relative;
+padding-bottom: 0;
+position: sticky;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+.nav-1{
+    width: 140px;height: 120px;
+overflow: hidden;
+/* border-radius: 50%; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.nav-1 img{
+    width: 100%;height: 100%;
+    object-fit: contain;
+    /* overflow: hidden; */
+    /* border-radius: 50%; */
+
+}
+.nav-2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.nav-2 ul li a{
+    color: white;
+ text-decoration: none;
+ font-size:20px ;
+ font-weight: 900;
+
+}
+.nav-2 ul li a.active{
+    color: yellow;
+}
+.nav-2 ul li a:hover{
+    color: yellow;
+}
+nav>img{
+    width: 100%;height: 40px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+}
+.menu,.close{
+    display: none;
+    opacity: 0;
+}
+#courier-hero{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 80px;
+    position: relative;
+    margin-top: 50px;
+    position: relative;
+}
+#angle{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    /* bottom: -90px; */
+    z-index: 100;
+}
+.courier-hero-1{
+    width: 40%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.courier-hero-1 h1{
+    font-size: 5vw;
+    font-weight: 500;
+}
+.courier-hero-1 a{
+    min-width: 100px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ecf39e;
+    font-weight: 900;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.courier-hero-1 a:hover{
+    background-color: #000000e0;
+}
+.courier-hero-2{
+    width: 60%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.courier-hero-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.8);
+}
+
+/* Courier sec 2 */
+#courier-2{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 80px;
+    background-color: white;
+}
+.courier-2-1{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    height: 80%;
+}
+.courier-2-1 h1{
+    font-size: 4vw;
+    font-weight: 500;
+}
+.courier-2-1 p{
+    font-size: 13px;
+}
+.courier-2-2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    height: 80%;
+}
+.courier-2-2 h2{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.courier-2-2 .other{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid #000000;
+padding-bottom: 5px;
+
+}
+.other a{
+    font-size: 13px;
+    color: #000000a1;
+    font-weight: 600;
+}
+.other a:hover{
+    color: #000000;
+}
+
+/* courier-3 */
+#courier-3{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 50px;
+    padding: 10px 80px;
+}
+#courier-3 h1{
+    font-size: 4vw;
+    font-weight: 500;
+    
+}
+.courier-3-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.courier-3-1-c{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    height: 160px;
+}
+.courier-3-1-c h3{
+    font-size: 18px;
+    font-weight: 900;
+}
+.courier-3-1-c p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.courier-3-1-c .courier-3-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #fca311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.courier-3-1-c .courier-3-icon i{
+    color: #fca311;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:950px) {
+    .arrows{
+        top: 25%;
+        left: 10%;
+    }
+    }
+    
+    
+    @media (max-width:900px) {
+        .menu,.close{
+            display: block;
+            opacity: 1;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+        }
+        .nav-2{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 90px;
+            padding-bottom: 100px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .6s ease, visibility .6s ease;
+            transform: translateY(-10px);
+            display: flex;
+            background-color: black;
+        }
+        .nav-2 ul{
+            flex-direction: column;
+        }
+        .nav-2.open{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .courier-3-1{
+            flex-direction: column;
+            gap: 50px;
+           }
+        #courier-2{
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+            padding-right: 70px;
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+        .courier-2-1{
+            align-items: center;
+            text-align: center;
+            width: 100%;
+          
+        }
+        .courier-2-1 h1{
+            font-size: 5vw;
+        }
+        .courier-2-1 p{
+            font-size: 13px;
+        }
+        .courier-2-2{
+            align-items: center;
+            width: 100%;
+            padding-right: 0px;
+        }
+        .courier-2-2 h2{
+            font-size: 4vw;
+        }
+        .other a{
+            font-size: 13px;
+        }
+        #courier-hero{
+            flex-direction: column-reverse;
+            padding-right: 50px;
+            padding-left: 30px;
+            padding-top: 40px;margin-top: 100px;
+        }
+        .courier-hero-1{
+            width: 100%;
+            align-items: center;
+        }
+        .courier-hero-1 p{
+            text-align: center;
+        }
+        .courier-hero-1 h1{
+            font-size: 7vw;
+        }
+        .courier-hero-2{
+            width: 100%;
+            padding-right: 50px;
+            padding-left: 30px;
+        }
+
+
+
+
+
+    }  
+    
+    
+
+    @media (max-width:550px) { 
+   
+        
+        #courier-3 h1{
+         font-size: 6vw;
+         text-align: center;
+        }
+         #courier-2{
+             flex-direction: column;
+             align-items: center;
+             padding-top: 60px;
+      
+             margin-bottom: 60px;
+             margin-top: 30px;
+         }
+         .courier-2-1 h1{
+             font-size: 6.5vw;
+         }
+         .courier-2-1 p{
+             font-size: 13px;
+         }
+         .courier-2-2 h2{
+             font-size: 5vw;
+         }
+        }
+
+        @media (max-width:400px) { 
+            #courier-hero{
+                padding-right: 40px;
+                padding-left: 20px;
+                text-align: center;
+            }
+            .courier-hero-1 p{
+                text-align: center;
+            }
+            #courier-2{
+                flex-direction: column;
+                align-items: center;
+                padding-top: 60px;
+                padding-right: 40px;
+                padding-left: 20px;
+                margin-bottom: 60px;
+                margin-top: 30px;
+            }
+            .courier-2-1 h1{
+                font-size: 8vw;
+            }
+            .courier-2-1 p{
+                font-size: 13px;
+            }
+            .courier-2-2 h2{
+                font-size: 5vw;
+            }
+        }
